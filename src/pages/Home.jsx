@@ -43,11 +43,11 @@ export default function Home() {
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
           <span className="font-label-sm text-xs uppercase tracking-widest text-neutral-500 font-bold block mb-8">Trusted By Our Community</span>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-6 md:gap-16 opacity-40">
-            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Local Growth</span>
-            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Urban Innovate</span>
-            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Community Dev</span>
-            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Economic Alliance</span>
-            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Founders Org</span>
+            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Quiet Legends</span>
+            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">BlueArk</span>
+            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Sparsk Academy</span>
+            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Basketball Farm</span>
+            <span className="font-display-sm text-lg md:text-xl font-black italic tracking-tighter text-on-background">Sonsight Wind</span>
           </div>
         </div>
       </section>
@@ -207,28 +207,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Preview */}
-      <section className="faq-preview py-16 md:py-24 bg-surface-container-lowest border-t border-outline-variant">
+      {/* CTA Section */}
+      <section className="cta-section py-16 md:py-24 relative bg-surface-container-lowest border-t border-outline-variant">
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
-          <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight mb-6">Got Questions?</h2>
-          <p className="text-on-surface-variant mb-10 max-w-2xl mx-auto">Learn more about our process, our pricing, and how we handle engagements across different industries.</p>
-          <Link to="/faq" className="border border-on-background text-on-background inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest font-bold rounded-sm hover:bg-on-background hover:text-white transition-colors">
-            Read the FAQ
-          </Link>
+          <div className="border border-outline-variant p-8 md:p-24 relative overflow-hidden bg-primary shadow-xl shadow-primary/20 rounded-lg">
+            <div className="absolute inset-0 grid-texture opacity-10"></div>
+            <h2 className="font-display-lg text-3xl md:text-5xl mb-6 md:mb-8 relative z-10 text-white tracking-tighter">Ready to <span className="italic font-medium">execute?</span></h2>
+            <p className="font-body-lg text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 md:mb-14 relative z-10 leading-relaxed">Let's discuss how we can help you move past obstacles and turn your concepts into measurable progress.</p>
+            <div className="relative z-10 flex flex-wrap justify-center gap-6">
+              <Link to="/contact" className="bg-primary-container text-on-primary-fixed inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-primary-fixed-dim transition-colors w-full md:w-auto">Start A Conversation</Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section py-16 md:py-24 relative bg-white border-t border-outline-variant">
+      {/* FAQ Preview */}
+      <section className="faq-preview py-16 md:py-24 bg-white border-t border-outline-variant">
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
-          <div className="border border-outline-variant p-8 md:p-24 relative overflow-hidden bg-white shadow-xl shadow-neutral-100/50 rounded-lg">
-            <div className="absolute inset-0 grid-texture opacity-10"></div>
-            <h2 className="font-display-lg text-3xl md:text-5xl mb-6 md:mb-8 relative z-10 text-on-background tracking-tighter">Ready to <span className="italic font-medium">execute?</span></h2>
-            <p className="font-body-lg text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 md:mb-14 relative z-10 leading-relaxed">Let's discuss how we can help you move past obstacles and turn your concepts into measurable progress.</p>
-            <div className="relative z-10 flex flex-wrap justify-center gap-6">
-              <Link to="/contact" className="bg-on-background text-white inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors w-full sm:w-auto">Start A Conversation</Link>
-            </div>
-          </div>
+          <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight mb-6">Got Questions?</h2>
+          <p className="text-on-surface-variant mb-10 max-w-2xl mx-auto md:text-lg">Learn more about our process, our pricing, and how we handle engagements across different industries.</p>
+          <Link to="/faq" className="border border-on-background text-on-background inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-on-background hover:text-white transition-colors w-full md:w-auto">
+            Read the FAQ
+          </Link>
         </div>
       </section>
     </main>
