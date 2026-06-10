@@ -41,7 +41,7 @@ export default function Navbar() {
   ];
 
   const getDesktopLinkClass = ({ isActive }) => 
-    `text-[16px] uppercase tracking-wider font-medium ${isActive ? 'text-on-background border-b border-on-background pb-1' : 'text-on-surface-variant hover:text-on-surface transition-colors'}`;
+    `md:text-sm uppercase tracking-wider font-medium ${isActive ? 'text-on-background border-b border-on-background pb-1' : 'text-on-surface-variant hover:text-on-surface transition-colors'}`;
 
   const getMobileLinkClass = ({ isActive }) =>
     `font-headline-sm text-3xl font-medium transition-colors ${isActive ? 'text-primary-container' : 'text-on-background'}`;
@@ -49,7 +49,7 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300">
-        <nav className="flex justify-between items-center h-16 md:h-20 px-6 md:px-20 max-w-container-max mx-auto" aria-label="Main Navigation">
+        <nav className="flex justify-between items-center h-16 md:h-20 px-6 md:px-10 max-w-container-max mx-auto" aria-label="Main Navigation">
           <Link to="/" className="h-8 flex items-center" aria-label="Home">
             <img 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiY5q1CCTtiKkYjdPU1ShGqDxzVA2JqZ3zOhXI4I6r0Hi2vY48Hospvcneu6nX3wM1UlF1CEhdGFz7oy9OuhtFNzCM_6c65SEdR8VTUsunKNOp0oC5AXDZ2btzaqF-3ATbykIvSDPWWeT88xKRE_AYvXXUZQF8dFJQrUYVGHCcm59pI5LwrMnerXBH4XbQVYI4NeD_0xXmZxqzxk2w0dFwe12C9uMqTwB2gK_rYSzcHHdtXMHj9sWzkIWM8WMmAu5PcLva3BEH6Pnh" 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <footer className="site-footer w-full pt-20 pb-12 bg-surface-container-lowest border-t border-outline-variant mt-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 px-6 md:px-20 max-w-container-max mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 px-6 md:px-10 max-w-container-max mx-auto">
         
         {/* Brand & Contact */}
         <div className="sm:col-span-2 md:col-span-1 mb-6 md:mb-0">
@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-20 pt-8 px-6 md:px-20 max-w-container-max mx-auto border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="mt-20 pt-8 px-6 md:px-10 max-w-container-max mx-auto border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="font-body-md text-xs text-on-surface-variant text-center md:text-left font-medium uppercase tracking-widest">
           © {new Date().getFullYear()} AG3 Management LLC. All rights reserved.
         </div>

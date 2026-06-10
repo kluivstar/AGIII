@@ -65,7 +65,7 @@ export default {
           "spacing": {
               "max-width": "1440px",
               "unit": "4px",
-              "margin-desktop": "80px",
+              "margin-desktop": "40px",
               "margin-mobile": "24px",
               "gutter": "24px"
           },
