@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply text-on-background bg-background;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    scroll-behavior: smooth;
+  }
+}
