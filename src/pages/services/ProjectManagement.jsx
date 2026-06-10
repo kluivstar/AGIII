@@ -1,9 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function ProjectManagement() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Project Management & Execution",
+    "provider": {
+      "@type": "Organization",
+      "name": "AG3 Management LLC"
+    },
+    "description": "We act as the operational backbone for our clients, turning complex plans into organized, measurable progress through precise oversight.",
+    "serviceType": "Consulting"
+  };
+
   return (
     <main className="min-h-screen pt-32 pb-24 bg-white">
+      <SEO 
+        title="Project Management & Execution" 
+        description="AG3 Management provides rigorous project management consulting to oversee timelines, manage implementations, and coordinate stakeholders."
+        canonicalPath="/services/project-management"
+        schema={serviceSchema}
+      />
       {/* Hero Section */}
       <section className="px-6 md:px-margin-desktop max-w-container-max mx-auto mb-16 md:mb-24">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">

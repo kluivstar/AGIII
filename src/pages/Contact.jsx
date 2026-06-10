@@ -1,8 +1,14 @@
 import React from 'react';
+import SEO from '../components/seo/SEO';
 
 export default function Contact() {
   return (
     <main className="min-h-screen pt-20 md:pt-24 bg-white">
+      <SEO 
+        title="Contact Us" 
+        description="Ready to start a conversation? Contact AG3 Management LLC to discuss how we can help you overcome obstacles and execute your vision."
+        canonicalPath="/contact"
+      />
       <section className="contact-section relative flex flex-col lg:flex-row min-h-[calc(100vh-100px)]">
         <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant -translate-x-1/2"></div>
 
@@ -16,14 +22,14 @@ export default function Contact() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8">
               <div>
-                <h3 className="font-label-sm text-xs md:text-sm text-on-surface-variant mb-4 tracking-widest font-bold uppercase">Headquarters</h3>
+                <h2 className="font-label-sm text-xs md:text-sm text-on-surface-variant mb-4 tracking-widest font-bold uppercase">Headquarters</h2>
                 <p className="font-body-md text-base md:text-lg text-on-background leading-relaxed">
                     82 Wendell Ave. Ste 100<br />
                     Pittsfield, MA 01201 US
                 </p>
               </div>
               <div>
-                <h3 className="font-label-sm text-xs md:text-sm text-on-surface-variant mb-4 tracking-widest font-bold uppercase">Direct Contact</h3>
+                <h2 className="font-label-sm text-xs md:text-sm text-on-surface-variant mb-4 tracking-widest font-bold uppercase">Direct Contact</h2>
                 <p className="font-body-md text-base md:text-lg text-on-background leading-relaxed">
                     <a href="mailto:info@ag3management.com" className="hover:text-primary-container transition-colors font-medium">info@ag3management.com</a><br />
                     <a href="tel:2023410757" className="hover:text-primary-container transition-colors font-medium pt-2 block">(202) 341-0757</a>

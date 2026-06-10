@@ -1,9 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/seo/SEO';
 
 export default function Home() {
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AG3 Management LLC",
+    "url": "https://ag3management.com",
+    "logo": "https://ag3management.com/logo.png",
+    "description": "AG3 Management LLC is a consulting firm that helps individuals and organizations formulate, develop, and execute ideas that create value.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-202-341-0757",
+      "contactType": "customer service"
+    }
+  };
+
   return (
     <main>
+      <SEO 
+        title="Consulting & Incubation" 
+        description="AG3 Management LLC helps individuals, entrepreneurs, nonprofits, and organizations overcome growth obstacles with strategic planning and project management."
+        canonicalPath="/"
+        schema={orgSchema}
+      />
       {/* Hero Section */}
       <section className="hero relative min-h-[85vh] flex items-center pt-32 pb-20 overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
@@ -32,7 +53,7 @@ export default function Home() {
           
           <div className="lg:col-span-5 relative hidden lg:block">
             <div className="relative w-full aspect-square border border-outline-variant p-4 md:p-6 bg-white shadow-xl shadow-neutral-100/50">
-              <img alt="Strategic Incubation Concept" className="w-full h-full object-cover filter contrast-125 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIv2MnLYz2K97Zvn_-fqfWnEIb__SAXfOmr3ckOy4NmBNXfSBX9DUJfRyg7j0-jLHvu5nk0x0gzEo93twjUacFs16TgQjBaEews17hz-l5HkBEz32aXxrP_Kezu2fbFZmiK-yCYHo7HtC0jlnzmIhIsaq5ILFR7RvZV8VlnMrwxBw4ru6m4T3pAcck3-hZIw8FGlIZiJppan-E4xXE_yxUyDrcIYyJ3HnezTUB05hUyHCTJQQ9uFy6SA-8W9Gt52U8dY3pzHYnNXi8" />
+              <img loading="lazy" alt="Strategic Incubation Concept" className="w-full h-full object-cover filter contrast-125 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIv2MnLYz2K97Zvn_-fqfWnEIb__SAXfOmr3ckOy4NmBNXfSBX9DUJfRyg7j0-jLHvu5nk0x0gzEo93twjUacFs16TgQjBaEews17hz-l5HkBEz32aXxrP_Kezu2fbFZmiK-yCYHo7HtC0jlnzmIhIsaq5ILFR7RvZV8VlnMrwxBw4ru6m4T3pAcck3-hZIw8FGlIZiJppan-E4xXE_yxUyDrcIYyJ3HnezTUB05hUyHCTJQQ9uFy6SA-8W9Gt52U8dY3pzHYnNXi8" />
             </div>
           </div>
         </div>
@@ -180,14 +201,14 @@ export default function Home() {
                 <div className="flex gap-6 md:gap-8 group">
                   <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border border-outline-variant text-on-background font-bold group-hover:border-on-background group-hover:bg-on-background group-hover:text-white transition-colors rounded-sm">01</div>
                   <div>
-                    <h4 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Human-Centered Incubation</h4>
+                    <h3 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Human-Centered Incubation</h3>
                     <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">We support individuals and organizations with limited resources, ensuring missed opportunities turn into realized goals.</p>
                   </div>
                 </div>
                 <div className="flex gap-6 md:gap-8 group">
                   <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border border-outline-variant text-on-background font-bold group-hover:border-on-background group-hover:bg-on-background group-hover:text-white transition-colors rounded-sm">02</div>
                   <div>
-                    <h4 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Proven Support Since 2013</h4>
+                    <h3 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Proven Support Since 2013</h3>
                     <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">We've helped launch and support brands across America by combining strategic planning with consistent, persistent action.</p>
                   </div>
                 </div>
@@ -196,7 +217,7 @@ export default function Home() {
             
             <div className="relative mt-8 lg:mt-0">
               <div className="border border-outline-variant p-4 bg-white shadow-xl">
-                <img alt="Business Collaboration" className="w-full aspect-[4/5] object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1AHmLoGouNzV6XhGqvYyQszfTICsGwB6GAyVrCxPVmxFwoXq8pRo44-hWp00kMyboAnDDInn7JjwM9jvlU0FWA8tkzSEFOT7bnVA--8dPw7m5DPM6fLkfzQIJeEL1RYhWZP8a4sSyZ2GLv-aN71N1eQalTr69sPFR9WYYhFArbcq80m-831ql94w0Pd0xgtNfMuUZjUJ25sPJJaq3KwJvohnE8ZartuwBUzKRZbPd3iv0uAFtIj0lpOu1vorToWMji9wjwVKIXH3B" />
+                <img loading="lazy" alt="Business Collaboration" className="w-full aspect-[4/5] object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1AHmLoGouNzV6XhGqvYyQszfTICsGwB6GAyVrCxPVmxFwoXq8pRo44-hWp00kMyboAnDDInn7JjwM9jvlU0FWA8tkzSEFOT7bnVA--8dPw7m5DPM6fLkfzQIJeEL1RYhWZP8a4sSyZ2GLv-aN71N1eQalTr69sPFR9WYYhFArbcq80m-831ql94w0Pd0xgtNfMuUZjUJ25sPJJaq3KwJvohnE8ZartuwBUzKRZbPd3iv0uAFtIj0lpOu1vorToWMji9wjwVKIXH3B" />
               </div>
               <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8 bg-on-background p-6 md:p-10 text-white shadow-2xl">
                 <div className="text-4xl md:text-5xl font-black mb-1 text-primary-container">10+</div>

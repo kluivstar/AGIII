@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/seo/SEO';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -39,8 +40,27 @@ export default function FAQ() {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <main className="min-h-screen pt-32 pb-24 px-6 md:px-margin-desktop bg-surface-container-lowest">
+      <SEO 
+        title="Frequently Asked Questions" 
+        description="Find answers to common questions about AG3 Management's consulting services, incubation process, pricing, and how we help organizations achieve their goals."
+        canonicalPath="/faq"
+        schema={faqSchema}
+      />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
           <span className="font-label-sm text-xs uppercase tracking-widest mb-6 block font-bold text-primary-container">Support</span>
@@ -75,7 +95,7 @@ export default function FAQ() {
         </div>
 
         <div className="mt-20 text-center p-8 md:p-12 border border-outline-variant bg-white rounded-lg shadow-sm">
-          <h3 className="font-headline-lg text-2xl mb-4 text-on-background">Still have questions?</h3>
+          <h2 className="font-headline-lg text-2xl mb-4 text-on-background">Still have questions?</h2>
           <p className="font-body-md text-on-surface-variant mb-8">We're ready to discuss your specific needs and how we can help.</p>
           <Link to="/contact" className="bg-on-background text-white inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors">
             Contact Us

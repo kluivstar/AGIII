@@ -1,9 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function StrategicPlanning() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Strategic Planning & Business Development",
+    "provider": {
+      "@type": "Organization",
+      "name": "AG3 Management LLC"
+    },
+    "description": "We build the foundational roadmap necessary to move your organization confidently from concept to implementation, ensuring sustainable growth and market resilience.",
+    "serviceType": "Consulting"
+  };
+
   return (
     <main className="min-h-screen pt-32 pb-24 bg-white">
+      <SEO 
+        title="Strategic Planning & Business Development" 
+        description="AG3 Management provides strategic planning and business development consulting to help your organization build a roadmap for sustainable growth."
+        canonicalPath="/services/strategic-planning"
+        schema={serviceSchema}
+      />
       {/* Hero Section */}
       <section className="px-6 md:px-margin-desktop max-w-container-max mx-auto mb-16 md:mb-24">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">

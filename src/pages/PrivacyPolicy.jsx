@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/seo/SEO';
 
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen pt-32 pb-24 px-6 md:px-margin-desktop bg-white">
+      <SEO 
+        title="Privacy Policy" 
+        description="Learn how AG3 Management LLC collects, uses, and protects your personal information when you use our website or services."
+        canonicalPath="/privacy-policy"
+      />
       <div className="max-w-3xl mx-auto">
         <span className="font-label-sm text-xs uppercase tracking-widest mb-6 block font-bold text-primary-container">Legal</span>
         <h1 className="font-display-sm text-4xl md:text-5xl mb-10 text-on-background tracking-tight">Privacy Policy</h1>

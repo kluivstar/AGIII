@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/seo/SEO';
 
 export default function About() {
   return (
     <main>
+      <SEO 
+        title="About Us" 
+        description="Learn about AG3 Management LLC, a consulting firm founded in 2013 to help individuals and organizations formulate and execute ideas that create value."
+        canonicalPath="/about"
+      />
       <section className="about-hero relative pt-32 pb-20 md:pb-24 px-6 md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 mb-6 md:mb-8">
@@ -18,7 +24,7 @@ export default function About() {
           </p>
         </div>
         <div className="mt-12 md:mt-20 w-full aspect-video md:aspect-[21/9] bg-surface-container-low overflow-hidden border border-on-background/5 rounded-lg shadow-sm">
-          <img className="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-1000" data-alt="AG3 Incubation Center Concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6yFG4O56hLaKiqV43cLzChciOW86-JViuGk6E1Sou2InCeWwEQBKnvjzSsDXMQPkF4fhCjjA869LX88owYqCdwI1vVOJZ4jsuv4QXv_vDTfIlSEoGh6L5-0wihWGeBmkBKvtFQ2XQ8vaLUnsHfZuaxw-i3KIN3iYUpjdilQccCfOYyFljY77jD0twCoIZ9OHqlLGePVCBzjWF-88L8Z9VjRShz6ujFRw0C282Lem-GAu6zh8nZPQHYSY4cZKGoSf8njvb0TKofMw" />
+          <img loading="lazy" className="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-1000" alt="AG3 Incubation Center Concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6yFG4O56hLaKiqV43cLzChciOW86-JViuGk6E1Sou2InCeWwEQBKnvjzSsDXMQPkF4fhCjjA869LX88owYqCdwI1vVOJZ4jsuv4QXv_vDTfIlSEoGh6L5-0wihWGeBmkBKvtFQ2XQ8vaLUnsHfZuaxw-i3KIN3iYUpjdilQccCfOYyFljY77jD0twCoIZ9OHqlLGePVCBzjWF-88L8Z9VjRShz6ujFRw0C282Lem-GAu6zh8nZPQHYSY4cZKGoSf8njvb0TKofMw" />
         </div>
       </section>
 
@@ -77,8 +83,8 @@ export default function About() {
             
             <div className="relative flex flex-col md:flex-row items-start md:items-center">
               <div className="md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right">
-                <h5 className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest">2013</h5>
-                <h4 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Foundation</h4>
+                <span className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest block">2013</span>
+                <h3 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Foundation</h3>
                 <p className="text-tertiary md:max-w-sm md:ml-auto leading-relaxed">AG3 Management LLC was established to help individuals formulate and develop ideas into actionable value, specifically supporting those with limited resources.</p>
               </div>
               <div className="absolute left-[11px] md:left-1/2 w-4 h-4 bg-on-background rounded-full -translate-x-1/2 border-4 border-white shadow-sm mt-1 md:mt-0"></div>
@@ -89,16 +95,16 @@ export default function About() {
               <div className="md:w-1/2 md:pr-16 hidden md:block"></div>
               <div className="absolute left-[11px] md:left-1/2 w-4 h-4 bg-on-background rounded-full -translate-x-1/2 border-4 border-white shadow-sm mt-1 md:mt-0"></div>
               <div className="md:w-1/2 pl-12 md:pl-16">
-                <h5 className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest">Growth</h5>
-                <h4 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Incubating Success</h4>
+                <span className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest block">Growth</span>
+                <h3 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Incubating Success</h3>
                 <p className="text-tertiary md:max-w-sm leading-relaxed">Over the years, we've successfully helped launch and support brands across America, guiding them through the complexities of execution and marketing.</p>
               </div>
             </div>
 
             <div className="relative flex flex-col md:flex-row items-start md:items-center">
               <div className="md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right">
-                <h5 className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest">Present</h5>
-                <h4 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Strategic Partnership</h4>
+                <span className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest block">Present</span>
+                <h3 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Strategic Partnership</h3>
                 <p className="text-tertiary md:max-w-sm md:ml-auto leading-relaxed">Today, we combine strategic planning, project management, and branding to build sustainable economic opportunities for entrepreneurs and organizations alike.</p>
               </div>
               <div className="absolute left-[11px] md:left-1/2 w-4 h-4 bg-on-background rounded-full -translate-x-1/2 border-4 border-white shadow-sm mt-1 md:mt-0"></div>

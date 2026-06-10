@@ -1,9 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function BrandingMarketing() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Branding & Marketing",
+    "provider": {
+      "@type": "Organization",
+      "name": "AG3 Management LLC"
+    },
+    "description": "We develop compelling brand positioning and content strategies to ensure your story reaches and resonates with the right audience.",
+    "serviceType": "Consulting"
+  };
+
   return (
     <main className="min-h-screen pt-32 pb-24 bg-white">
+      <SEO 
+        title="Branding & Marketing" 
+        description="AG3 Management crafts compelling brand positioning, messaging development, and content strategies to build market authority."
+        canonicalPath="/services/branding-marketing"
+        schema={serviceSchema}
+      />
       {/* Hero Section */}
       <section className="px-6 md:px-margin-desktop max-w-container-max mx-auto mb-16 md:mb-24">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">

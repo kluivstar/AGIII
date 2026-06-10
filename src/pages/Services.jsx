@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/seo/SEO';
 
 export default function Services() {
   return (
     <main>
+      <SEO 
+        title="Our Services" 
+        description="AG3 Management provides comprehensive support structures designed to incubate and accelerate your organization's growth through strategic planning, project management, and branding."
+        canonicalPath="/services"
+      />
       <section className="services-hero relative min-h-[80vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-32 px-6 md:px-margin-desktop bg-white overflow-hidden">
         <div className="absolute inset-0 swiss-grid-line opacity-40 pointer-events-none"></div>
         <div className="max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter relative z-10">
@@ -24,7 +30,7 @@ export default function Services() {
           </div>
           <div className="lg:col-span-4 hidden lg:flex items-center justify-center relative">
             <div className="w-full aspect-[4/5] border border-outline-variant bg-white p-4 relative overflow-hidden group shadow-xl">
-              <img alt="Strategic Concept" className="w-full h-full object-cover grayscale opacity-90 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCatbsVUAKvnMd21diAyLJ18CClY4TNqII6IuDxK8EsDcaDm4LmsDLZFHtk9fhnym2IbD00jpyuuFwtfdyfVmE6WQoO53BXPgau-nIrSA8B5TZjAQOfaVurZiHLoRa--EYfY_-XMnapjj-LZ1mVABAdIdNbaF5rJnvNcpjBarypsqQCFXIQYcqg9Ubuyo2huWVbaPCZayhGG6hmZ14Ywmb-oOGSXwsG9k_exzATWkkKSI9suVPkh5aJ8Nn-f7AE6UCLlDUWRXbhi3Qf" />
+              <img loading="lazy" alt="Strategic Concept" className="w-full h-full object-cover grayscale opacity-90 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCatbsVUAKvnMd21diAyLJ18CClY4TNqII6IuDxK8EsDcaDm4LmsDLZFHtk9fhnym2IbD00jpyuuFwtfdyfVmE6WQoO53BXPgau-nIrSA8B5TZjAQOfaVurZiHLoRa--EYfY_-XMnapjj-LZ1mVABAdIdNbaF5rJnvNcpjBarypsqQCFXIQYcqg9Ubuyo2huWVbaPCZayhGG6hmZ14Ywmb-oOGSXwsG9k_exzATWkkKSI9suVPkh5aJ8Nn-f7AE6UCLlDUWRXbhi3Qf" />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-white border-t border-outline-variant">
                 <p className="font-label-sm text-xs text-on-background font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary-container rounded-full"></span> AG3 Philosophy
