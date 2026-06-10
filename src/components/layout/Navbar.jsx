@@ -41,7 +41,7 @@ export default function Navbar() {
   ];
 
   const getDesktopLinkClass = ({ isActive }) => 
-    `font-label-sm uppercase tracking-wider ${isActive ? 'text-on-background border-b border-on-background pb-1' : 'text-on-surface-variant hover:text-on-surface transition-colors'}`;
+    `text-[16px] uppercase tracking-wider font-medium ${isActive ? 'text-on-background border-b border-on-background pb-1' : 'text-on-surface-variant hover:text-on-surface transition-colors'}`;
 
   const getMobileLinkClass = ({ isActive }) =>
     `font-headline-sm text-3xl font-medium transition-colors ${isActive ? 'text-primary-container' : 'text-on-background'}`;
