@@ -44,7 +44,7 @@ export default function Navbar() {
     `font-label-sm uppercase tracking-wider ${isActive ? 'text-on-background border-b border-on-background pb-1' : 'text-on-surface-variant hover:text-on-surface transition-colors'}`;
 
   const getMobileLinkClass = ({ isActive }) =>
-    `font-headline-md text-headline-md transition-colors ${isActive ? 'text-primary-container' : 'text-on-background'}`;
+    `font-headline-sm text-3xl font-medium transition-colors ${isActive ? 'text-primary-container' : 'text-on-background'}`;
 
   return (
     <>

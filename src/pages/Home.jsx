@@ -117,7 +117,7 @@ export default function Home() {
             <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight">How We Work Together.</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="relative p-8 border border-outline-variant rounded-lg bg-surface-container-lowest">
               <div className="text-4xl font-black text-on-surface-variant/10 mb-4 select-none">01</div>
               <h3 className="font-headline-lg text-xl mb-3 text-on-background">Discovery</h3>
@@ -146,7 +146,7 @@ export default function Home() {
       <section className="industries py-16 md:py-24 bg-surface-container-lowest border-y border-outline-variant">
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
           <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight mb-16">Who We Support.</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8">
               <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">person</span>
               <h3 className="font-headline-lg text-xl mb-4">Entrepreneurs</h3>
