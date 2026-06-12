@@ -26,7 +26,7 @@ export default function Home() {
         schema={orgSchema}
       />
       {/* Hero Section */}
-      <section className="hero relative min-h-[85vh] flex items-center pt-32 pb-20 overflow-hidden bg-white">
+      <section className="hero relative min-h-[85vh] flex items-center pt-10 pb-20 overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
           <img className="w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-multiply" alt="AG3 Management Strategy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJbM-ZnbZf5iRU-Pu068Hpq3o6_QpPgqgFPy3H1T1ZspUl8X72j-SiEmeWKRIQ_G60IgtYvUPct919b_pv2o_IT440xhR7OnSGwVzDR6jZfr-b-QZitd3Ul4HB1sT--DRfwT7-4u0cuOTfLTwVEeohO1OhfNhLMNYPefpW3NVz1DTSS6OaLQsphyUkoM2liMvQtrA6xlurqyhpJHPRwL8vW9hDq9rjIo61gDLvFOzQyMaGqM1X2sm_E6j_YY_T8Pxyh2A7icmBv91z" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent md:to-white/40"></div>
@@ -46,7 +46,7 @@ export default function Home() {
                 We help individuals, entrepreneurs, nonprofits, and organizations overcome growth obstacles. Partner with us to create structure, gain momentum, and achieve measurable progress.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="bg-on-background text-white inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors text-center w-full sm:w-auto">Get Started</Link>
+              <Link to="/contact" className="bg-on-primary-container text-white inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors text-center w-full sm:w-auto">Get Started</Link>
               <Link to="/services" className="border border-outline-variant hover:border-on-background bg-white/50 backdrop-blur-sm inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest transition-all rounded-sm text-center font-bold w-full sm:w-auto">Our Services</Link>
             </div>
           </div>
@@ -165,8 +165,8 @@ export default function Home() {
 
       {/* Industries & Organizations */}
       <section className="industries py-16 md:py-24 bg-surface-container-lowest border-y border-outline-variant">
-        <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
-          <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight mb-16">Who We Support.</h2>
+        <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-left">
+          <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight text-center mb-16">Who We Support.</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-8">
               <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">person</span>
@@ -247,7 +247,7 @@ export default function Home() {
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
           <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight mb-6">Got Questions?</h2>
           <p className="text-on-surface-variant mb-10 max-w-2xl mx-auto md:text-lg">Learn more about our process, our pricing, and how we handle engagements across different industries.</p>
-          <Link to="/faq" className="border border-on-background text-on-background inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-on-background hover:text-white transition-colors w-full md:w-auto">
+          <Link to="/faq" className="border border-on-background text-on-background inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-primary-fixed hover:text-white transition-colors w-full md:w-auto">
             Read the FAQ
           </Link>
         </div>

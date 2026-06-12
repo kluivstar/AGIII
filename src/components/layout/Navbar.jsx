@@ -129,7 +129,7 @@ export default function Navbar() {
         <div className="mt-auto p-6 pb-12">
           <button 
             onClick={() => { closeMenu(); navigate('/contact'); }}
-            className="w-full bg-on-background text-white font-label-md py-4 rounded-sm uppercase tracking-widest font-bold"
+            className="w-full bg-on-primary-container text-white font-label-md py-4 rounded-sm uppercase tracking-widest font-bold"
           >
             Get Started
           </button>
