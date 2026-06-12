@@ -1,5 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo/SEO';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
   return (
@@ -46,42 +47,7 @@ export default function Contact() {
               <h2 className="font-display-sm text-3xl md:text-4xl mb-4 text-on-background tracking-tight">Business Inquiry</h2>
               <p className="text-tertiary font-body-md text-base md:text-lg max-w-md leading-relaxed">Tell us about your strategic challenges and requirements to begin the consultative process.</p>
             </div>
-            <form className="space-y-6 md:space-y-10">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
-                <div className="space-y-2 md:space-y-3">
-                  <label className="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest font-bold">Full Name</label>
-                  <input className="w-full bg-white border border-outline-variant px-4 py-3 md:py-4 transition-colors text-on-background focus:border-on-background focus:outline-none focus:ring-1 focus:ring-on-background rounded-sm" placeholder="John Doe" type="text" />
-                </div>
-                <div className="space-y-2 md:space-y-3">
-                  <label className="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest font-bold">Organization</label>
-                  <input className="w-full bg-white border border-outline-variant px-4 py-3 md:py-4 transition-colors text-on-background focus:border-on-background focus:outline-none focus:ring-1 focus:ring-on-background rounded-sm" placeholder="Your Company" type="text" />
-                </div>
-              </div>
-              <div className="space-y-2 md:space-y-3">
-                <label className="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest font-bold">Email Address</label>
-                <input className="w-full bg-white border border-outline-variant px-4 py-3 md:py-4 transition-colors text-on-background focus:border-on-background focus:outline-none focus:ring-1 focus:ring-on-background rounded-sm" placeholder="j.doe@company.com" type="email" />
-              </div>
-              <div className="space-y-2 md:space-y-3">
-                <label className="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest font-bold">Service Interest</label>
-                <select className="w-full bg-white border border-outline-variant px-4 py-3 md:py-4 transition-colors text-on-background focus:border-on-background focus:outline-none focus:ring-1 focus:ring-on-background rounded-sm appearance-none cursor-pointer">
-                  <option>Strategic Planning</option>
-                  <option>Project Management</option>
-                  <option>Branding & Marketing</option>
-                  <option>Business Incubation</option>
-                  <option>General Inquiry</option>
-                </select>
-              </div>
-              <div className="space-y-2 md:space-y-3">
-                <label className="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest font-bold">Project Details</label>
-                <textarea className="w-full bg-white border border-outline-variant px-4 py-3 md:py-4 transition-colors text-on-background focus:border-on-background focus:outline-none focus:ring-1 focus:ring-on-background rounded-sm resize-y min-h-[120px]" placeholder="Describe your vision, challenges, and requirements..." rows="4"></textarea>
-              </div>
-              <div className="pt-4 md:pt-6">
-                <button className="w-full bg-on-background text-white py-4 md:py-5 font-bold uppercase tracking-[0.2em] hover:bg-neutral-800 transition-colors flex justify-between items-center px-6 md:px-10 group rounded-sm text-sm md:text-base" type="submit">
-                    Initiate Consultation
-                    <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
