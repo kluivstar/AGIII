@@ -16,7 +16,7 @@ export default function StrategicPlanning() {
   };
 
   return (
-    <main className="min-h-screen pt-32 pb-24 bg-white">
+    <main className="min-h-screen pt-12 pb-24 bg-white">
       <SEO 
         title="Strategic Planning & Business Development" 
         description="AG3 Management provides strategic planning and business development consulting to help your organization build a roadmap for sustainable growth."
@@ -88,7 +88,7 @@ export default function StrategicPlanning() {
       </section>
 
       {/* Outcomes & CTA */}
-      <section className="px-6 md:px-margin-desktop max-w-container-max mx-auto pt-20 md:pt-32">
+      <section className="px-6 md:px-margin-desktop max-w-container-max mx-auto pt-20 md:pt-12">
         <div className="bg-on-background text-white rounded-xl p-10 md:p-20 shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 grid-texture opacity-10"></div>
           <div className="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">

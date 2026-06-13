@@ -4,7 +4,7 @@ import SEO from '../components/seo/SEO';
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen pt-32 pb-24 px-6 md:px-margin-desktop bg-white">
+    <main className="min-h-screen pt-12 pb-24 px-6 md:px-margin-desktop bg-white">
       <SEO 
         title="Privacy Policy" 
         description="Learn how AG3 Management LLC collects, uses, and protects your personal information when you use our website or services."

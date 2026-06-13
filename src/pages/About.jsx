@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
+import CTASection from '../components/CTASection';
 
 export default function About() {
   return (
     <main>
       <SEO 
         title="About Us" 
-        description="Learn about AG3 Management LLC, a consulting firm founded in 2013 to help individuals and organizations formulate and execute ideas that create value."
+        description="Learn about AG3 Management LLC, a consulting firm founded in 2020 to help individuals and organizations formulate and execute ideas that create value."
         canonicalPath="/about"
       />
-      <section className="about-hero relative pt-32 pb-20 md:pb-24 px-6 md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+      <section className="about-hero relative pt-12 pb-20 md:pb-24 px-6 md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 mb-6 md:mb-8">
-            <div className="w-2 h-2 bg-primary-container rounded-full"></div>
+            <div className="w-2 h-2 bg-[#95da03] rounded-full"></div>
             <span className="font-label-sm text-xs uppercase tracking-widest text-tertiary">Who We Are</span>
           </div>
           <h1 className="font-display-lg text-4xl sm:text-5xl md:text-6xl mb-6 md:mb-8 leading-tight tracking-tight">
@@ -76,14 +77,14 @@ export default function About() {
       </section>
 
       <section className="about-history py-16 md:py-32 px-6 md:px-margin-desktop max-w-container-max mx-auto bg-white border-t border-on-background/5">
-        <h2 className="font-display-sm text-3xl md:text-5xl mb-12 md:mb-20 tracking-tight text-center md:text-left">Since 2013</h2>
+        <h2 className="font-display-sm text-3xl md:text-5xl mb-12 md:mb-20 tracking-tight text-center md:text-left">Since 2020</h2>
         <div className="relative">
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-on-background/10 md:-translate-x-1/2"></div>
           <div className="space-y-16 md:space-y-24">
             
             <div className="relative flex flex-col md:flex-row items-start md:items-center">
               <div className="md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right">
-                <span className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest block">2013</span>
+                <span className="font-label-sm text-xs uppercase text-primary-container font-bold mb-2 tracking-widest block">2020</span>
                 <h3 className="font-headline-lg text-xl md:text-2xl mb-3 font-bold">Foundation</h3>
                 <p className="text-tertiary md:max-w-sm md:ml-auto leading-relaxed">AG3 Management LLC was established to help individuals formulate and develop ideas into actionable value, specifically supporting those with limited resources.</p>
               </div>
@@ -115,13 +116,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="cta-section py-16 md:py-24 bg-surface-container-lowest text-center px-6 border-t border-outline-variant">
-        <h2 className="font-display-sm text-3xl md:text-5xl mb-6 tracking-tight text-on-background">Ready to grow?</h2>
-        <p className="font-body-lg text-lg md:text-xl text-tertiary max-w-2xl mx-auto mb-10">Let's work together to transform your vision into a meaningful outcome.</p>
-        <Link to="/contact" className="bg-on-background text-white inline-flex items-center justify-center px-10 md:px-16 py-4 md:py-6 font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors w-full sm:w-auto">
-            Get Started
-        </Link>
-      </section>
+      <CTASection />
     </main>
   );
 }

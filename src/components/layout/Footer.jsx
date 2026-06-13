@@ -32,7 +32,7 @@ export default function Footer() {
           <Link to="/" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">Home</Link>
           <Link to="/about" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">About</Link>
           <Link to="/services" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">Services</Link>
-          <Link to="/case-studies" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">Case Studies</Link>
+          <Link to="/faq" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">FAQ</Link>
           <Link to="/contact" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">Contact</Link>
         </div>
 
@@ -47,7 +47,6 @@ export default function Footer() {
         {/* Resources Links */}
         <div className="space-y-4">
           <h5 className="font-label-sm text-on-background font-bold uppercase tracking-[0.2em] mb-6 text-xs border-b border-outline-variant pb-2 inline-block">Resources</h5>
-          <Link to="/faq" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">FAQ</Link>
           <Link to="/privacy-policy" className="block text-on-surface-variant hover:text-on-background transition-colors text-sm font-medium">Privacy Policy</Link>
         </div>
       </div>

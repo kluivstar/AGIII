@@ -6,7 +6,6 @@ import AppLayout from './components/layout/AppLayout';
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
-const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const Insights = lazy(() => import('./pages/Insights'));
 const Contact = lazy(() => import('./pages/Contact'));
 
@@ -32,7 +31,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
             
