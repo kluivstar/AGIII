@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/seo/SEO';
+import projectImag from '../../assets/project-management.jpg';
 
 export default function ProjectManagement() {
   const serviceSchema = {
@@ -36,7 +37,7 @@ export default function ProjectManagement() {
             </p>
           </div>
           <div className="lg:w-1/2 w-full h-[300px] md:h-[450px] bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-lg">
-            <img alt="Project Execution" className="w-full h-full object-cover grayscale opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQq_T0N8yWnE2yS6x6t2U8uF2B2P0lqX9V_yG8c6rG7kL6G2c5y_a8WbB4Xh1X1c6v_F6d9w0e9W1yG8c6rG7kL6G2c5y_a8WbB4Xh1X1c6v_F6d9w0e9W1yG8c6rG7kL6G2c5y_a8WbB4Xh1X1c6v_F6d9w0e9W1" />
+            <img alt="Project Execution" className="w-full h-full object-cover grayscale opacity-90" src={projectImag}/>
           </div>
         </div>
       </section>

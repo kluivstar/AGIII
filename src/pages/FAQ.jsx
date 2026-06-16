@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
+import CTASection from '../components/CTASection';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -94,13 +95,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-20 text-center p-8 md:p-12 border border-outline-variant bg-white rounded-lg shadow-sm">
-          <h2 className="font-headline-lg text-2xl mb-4 text-on-background">Still have questions?</h2>
-          <p className="font-body-md text-on-surface-variant mb-8">We're ready to discuss your specific needs and how we can help.</p>
-          <Link to="/contact" className="bg-[#95da03] text-white inline-flex items-center justify-center px-10 py-4 font-label-sm uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-800 transition-colors">
-            Contact Us
-          </Link>
-        </div>
+        <CTASection />
       </div>
     </main>
   );

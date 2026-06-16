@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/seo/SEO';
+import businessDev from '../../assets/business-dev.jpg';
 
 export default function StrategicPlanning() {
   const serviceSchema = {
@@ -36,7 +37,7 @@ export default function StrategicPlanning() {
             </p>
           </div>
           <div className="lg:w-1/2 w-full h-[300px] md:h-[450px] bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-lg">
-            <img alt="Strategic Planning" className="w-full h-full object-cover grayscale opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1cCLiCDkUFp4PUSSVrTw6XsliE0Y3SLnLutslzK9eDlYnnfbqziVR0R5C61Ay3jBy5p3kIdOLCLk1k19iLC2ELnOhFGQLOJKfpxznMZ0oDTz2S7y1U3RoeI_jKpq1JAS85SfkoBvX57JbYZEqyjKYM2py5-G3xEe0ZPmwUbTgbuMxoikPpO_zXoq9zNuUxlUtHfjtqb99OW9qDBo7V4Y1vv1JfDgjgAWSKrklU_UdT5DiyfySawmVrxiIv3UPUSGiDBMEcuqcgpSs" />
+            <img alt="Strategic Planning" className="w-full h-full object-cover grayscale opacity-90" src={businessDev} />
           </div>
         </div>
       </section>

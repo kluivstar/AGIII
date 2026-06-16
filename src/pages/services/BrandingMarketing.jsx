@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/seo/SEO';
+import brandImg from '../../assets/branding.jpg';
 
 export default function BrandingMarketing() {
   const serviceSchema = {
@@ -36,7 +37,7 @@ export default function BrandingMarketing() {
             </p>
           </div>
           <div className="lg:w-1/2 w-full h-[300px] md:h-[450px] bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-lg">
-            <img alt="Branding and Marketing" className="w-full h-full object-cover grayscale opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFqG-E_QGfAty6vU7eT0WvX8Z9qE0hR4L4R3N0pZ8lU1U9B8K1X0lV4N4F5O6X7cT0L5K3N7P8M9N1bH2B9G4J7L2Q4F1P5Y8O6N4X0M9N5V7E6F1R3C8G4X9M1P4K7L8F2B5G4D2C9M0W8G3N7T4D8G0" />
+            <img alt="Branding and Marketing" className="w-full h-full object-cover grayscale opacity-90" src={brandImg} />
           </div>
         </div>
       </section>
