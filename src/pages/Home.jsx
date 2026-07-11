@@ -62,19 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Community Partners */}
-      <section className="community-partners border-y border-outline-variant bg-white py-12 md:py-16">
-        <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
-          <span className="font-label-sm text-xs uppercase tracking-widest text-neutral-500 font-bold block mb-8">Trusted By Our Community</span>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-6 md:gap-16 opacity-40">
-            <span className="font-display-sm text-lg md:text-xl font-black tracking-tighter text-on-background">Quiet Legends</span>
-            <span className="font-display-sm text-lg md:text-xl font-black tracking-tighter text-on-background">BlueArk</span>
-            <span className="font-display-sm text-lg md:text-xl font-black tracking-tighter text-on-background">Sparsk Academy</span>
-            <span className="font-display-sm text-lg md:text-xl font-black tracking-tighter text-on-background">Basketball Farm</span>
-            <span className="font-display-sm text-lg md:text-xl font-black tracking-tighter text-on-background">Sonsight Wind</span>
-          </div>
-        </div>
-      </section>
 
       {/* How We Help / Strategic Impact */}
       <section className="strategic-impact py-16 md:py-24 bg-white">
@@ -97,7 +84,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-auto md:max-w-sm">
               <p className="text-on-surface-variant text-lg leading-relaxed">
-                  We know that lack of clarity, limited resources, and operational complexity can stall your vision. Our core services provide the structure you need.
+                  We know that limited resources and operational complexity can stall your vision. Our core services provide the structure you need.
               </p>
             </div>
           </div>
@@ -115,7 +102,7 @@ export default function Home() {
             <div className="bg-white border border-outline-variant p-8 md:p-12 rounded-lg group hover:border-on-background transition-colors duration-300 shadow-sm hover:shadow-md flex flex-col h-full">
               <span className="material-symbols-outlined text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light">task_alt</span>
               <h3 className="font-headline-lg text-2xl mb-4 text-on-background group-hover:text-primary-container transition-colors">Project Management</h3>
-              <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed flex-grow">Solve difficulty executing plans through dedicated program management, budget oversight, and precise timeline execution.</p>
+              <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed flex-grow">Solve execution difficulties through dedicated program management, budget oversight, and precise timeline execution.</p>
               <Link to="/services/project-management" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest group-hover:gap-4 transition-all mt-auto w-fit">
                   Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </Link>
@@ -184,7 +171,7 @@ export default function Home() {
             <div className="p-8">
               <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">domain</span>
               <h3 className="font-headline-lg text-xl mb-4">Organizations</h3>
-              <p className="text-on-surface-variant">Guiding established businesses through complex expansion and branding initiatives.</p>
+              <p className="text-on-surface-variant">Guiding established businesses through complex expansions and branding initiatives.</p>
             </div>
           </div>
         </div>
@@ -211,8 +198,8 @@ export default function Home() {
                 <div className="flex gap-6 md:gap-8 group">
                   <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border border-outline-variant text-on-background font-bold group-hover:border-on-background group-hover:bg-on-background group-hover:text-white transition-colors rounded-sm">02</div>
                   <div>
-                    <h3 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Proven Support Since 2020</h3>
-                    <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">We've helped launch and support brands across America by combining strategic planning with consistent, persistent action.</p>
+                    <h3 className="font-headline-lg text-xl font-bold mb-2 md:mb-3 text-on-background">Consistent Support</h3>
+                    <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">We help launch and support brands across America by combining strategic planning with consistent, persistent action.</p>
                   </div>
                 </div>
               </div>
@@ -223,7 +210,7 @@ export default function Home() {
                 <img loading="lazy" alt="Business Collaboration" className="w-full aspect-[4/5] object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700" src={whyAg3Img} />
               </div>
               <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8 bg-on-background p-6 md:p-10 text-white shadow-2xl">
-                <div className="text-4xl md:text-5xl font-black mb-1 text-[#95da03]">5+</div>
+                <div className="text-4xl md:text-5xl font-black mb-1 text-[#95da03]">10+</div>
                 <div className="font-label-sm text-[10px] md:text-xs uppercase tracking-widest opacity-80">Years of Impact</div>
               </div>
             </div>

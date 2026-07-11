@@ -13,7 +13,7 @@ export default function FAQ() {
     },
     {
       question: "Who do you work with?",
-      answer: "We work with a wide range of clients including ambitious individuals, startups, established businesses, and nonprofits. Our primary focus is on clients who have strong vision but may face challenges with limited resources, lack of clarity, or operational complexity."
+      answer: "We work with individuals, startups, businesses, and nonprofits that are ready to grow. Whether you have a clear vision or are still figuring out the best path forward, we're here to help bring ideas to life and overcome challenges along the way."
     },
     {
       question: "How does the consulting process work?",
@@ -33,7 +33,7 @@ export default function FAQ() {
     },
     {
       question: "What industries do you support?",
-      answer: "We are industry-agnostic. Our foundational business principles—strategic planning, precise execution, and strong market positioning—are effective across various sectors including technology, retail, community development, and professional services."
+      answer: "We are industry-agnostic. Our foundational business principles—strategic planning, precise execution, and strong market positioning—are effective across various sectors including, but not limited to, technology, retail, community development, and professional services."
     },
     {
       question: "How do I get started?",

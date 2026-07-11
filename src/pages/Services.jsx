@@ -27,7 +27,6 @@ export default function Services() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
               <Link to="/contact" className="bg-on-background text-white inline-flex items-center justify-center font-label-md py-4 md:py-5 px-10 md:px-12 font-bold uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all rounded-sm text-center w-full sm:w-auto">Start Your Project</Link>
-              <a href="#services-index" className="border border-outline-variant bg-white text-on-background inline-flex items-center justify-center font-label-md py-4 md:py-5 px-10 md:px-12 font-bold uppercase tracking-[0.2em] hover:border-on-background transition-all rounded-sm text-center w-full sm:w-auto">View Services</a>
             </div>
           </div>
           <div className="lg:col-span-4 hidden lg:flex items-center justify-center relative">
@@ -174,6 +173,39 @@ export default function Services() {
                   </div>
                   <Link to="/services/branding-marketing" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
                       Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Content Creation */}
+            <div className="p-8 md:p-12 bg-white border border-outline-variant rounded-lg shadow-sm flex flex-col lg:flex-row gap-8 md:gap-12 hover:border-on-background transition-colors">
+              <div className="lg:w-1/3">
+                <span className="material-symbols-outlined text-primary-fixed text-5xl mb-6 block font-light">video_library</span>
+                <h3 className="font-headline-lg text-2xl md:text-3xl mb-4 font-bold text-on-background">Content Creation</h3>
+              </div>
+              <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-label-sm text-xs uppercase tracking-widest mb-2 font-bold text-primary-container">What We Produce</h4>
+                    <p className="font-body-md text-on-surface-variant leading-relaxed">High-quality, engaging visual and audio content designed to tell your brand story and capture audience attention.</p>
+                  </div>
+                  <ul className="space-y-3 pt-2">
+                    <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Documentaries</li>
+                    <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Commercials</li>
+                    <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Short films</li>
+                  </ul>
+                </div>
+                <div className="space-y-6 flex flex-col justify-between">
+                  <div>
+                    <ul className="space-y-3 pt-2 mt-6">
+                      <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Video campaigns</li>
+                      <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Web media</li>
+                      <li className="flex items-center gap-3 font-label-sm text-xs text-on-surface uppercase tracking-wider font-bold"><span className="w-1.5 h-1.5 bg-primary-container rounded-full"></span> Audio production</li>
+                    </ul>
+                  </div>
+                  <Link to="/contact" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
+                      Start Production <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </Link>
                 </div>
               </div>

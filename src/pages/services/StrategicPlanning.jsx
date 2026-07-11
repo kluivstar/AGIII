@@ -72,7 +72,7 @@ export default function StrategicPlanning() {
             <div className="bg-white p-8 md:p-10 rounded-lg border border-outline-variant shadow-sm relative overflow-hidden">
               <div className="text-[120px] font-black text-on-surface-variant/5 absolute -right-4 -bottom-8 leading-none select-none">1</div>
               <h3 className="font-headline-lg text-xl md:text-2xl mb-4 relative z-10 text-on-background">Vision Clarification</h3>
-              <p className="font-body-md text-on-surface-variant relative z-10 leading-relaxed">We work closely with leadership to define core objectives and align the organizational vision with tangible business goals.</p>
+              <p className="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Working closely with leadership to define core objectives and align the organizational vision with tangible business goals.</p>
             </div>
             <div className="bg-white p-8 md:p-10 rounded-lg border border-outline-variant shadow-sm relative overflow-hidden">
               <div className="text-[120px] font-black text-on-surface-variant/5 absolute -right-4 -bottom-8 leading-none select-none">2</div>

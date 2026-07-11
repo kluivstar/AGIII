@@ -45,7 +45,7 @@ export default function Contact() {
           <div className="max-w-xl mx-auto lg:mx-0 w-full">
             <div className="mb-10 md:mb-14">
               <h2 className="font-display-sm text-3xl md:text-4xl mb-4 text-on-background tracking-tight">Business Inquiry</h2>
-              <p className="text-tertiary font-body-md text-base md:text-lg max-w-md leading-relaxed">Tell us about your strategic challenges and requirements to begin the consultative process.</p>
+              <p className="text-tertiary font-body-md text-base md:text-lg max-w-md leading-relaxed">Tell us about your needs to begin the consultative process.</p>
             </div>
             <ContactForm />
           </div>

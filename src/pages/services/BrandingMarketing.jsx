@@ -12,7 +12,7 @@ export default function BrandingMarketing() {
       "@type": "Organization",
       "name": "AG3 Management LLC"
     },
-    "description": "We develop compelling brand positioning and content strategies to ensure your story reaches and resonates with the right audience.",
+    "description": "We develop compelling brand positioning and content strategies to ensure your story reaches and resonates with the right audiences.",
     "serviceType": "Consulting"
   };
 
@@ -33,7 +33,7 @@ export default function BrandingMarketing() {
             </Link>
             <h1 className="font-display-sm text-4xl md:text-6xl mb-6 text-on-background tracking-tight leading-tight">Branding & <br className="hidden md:block"/>Marketing</h1>
             <p className="font-body-lg text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-xl">
-              We develop compelling brand positioning and content strategies to ensure your story reaches and resonates with the right audience.
+              We develop compelling brand positioning and content strategies to ensure your story reaches and resonates with the right audiences.
             </p>
           </div>
           <div className="lg:w-1/2 w-full h-[300px] md:h-[450px] bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-lg">
@@ -77,7 +77,7 @@ export default function BrandingMarketing() {
             <div className="bg-white p-8 md:p-10 rounded-lg border border-outline-variant shadow-sm relative overflow-hidden">
               <div className="text-[120px] font-black text-on-surface-variant/5 absolute -right-4 -bottom-8 leading-none select-none">2</div>
               <h3 className="font-headline-lg text-xl md:text-2xl mb-4 relative z-10 text-on-background">Messaging Development</h3>
-              <p className="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Crafting clear, compelling narratives that directly address your audience's pain points and aspirations.</p>
+              <p className="font-body-md text-on-surface-variant relative z-10 leading-relaxed">Crafting clear, compelling narratives that directly address your audiences’ pain points and aspirations.</p>
             </div>
             <div className="bg-white p-8 md:p-10 rounded-lg border border-outline-variant shadow-sm relative overflow-hidden">
               <div className="text-[120px] font-black text-on-surface-variant/5 absolute -right-4 -bottom-8 leading-none select-none">3</div>
