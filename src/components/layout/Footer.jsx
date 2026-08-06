@@ -56,6 +56,9 @@ export default function Footer() {
         <div className="font-body-md text-xs text-on-surface-variant text-center md:text-left font-medium uppercase tracking-widest">
           © {new Date().getFullYear()} AG3 Management LLC. All rights reserved.
         </div>
+        <div className="font-body-md text-xs text-on-surface-variant text-center md:text-right font-medium uppercase tracking-widest normal-case">
+          Site built by <a href="https://stackria.com/" target="_blank" rel="noopener noreferrer" className="hover:text-on-background transition-colors underline">Stackria</a>
+        </div>
       </div>
     </footer>
   );
