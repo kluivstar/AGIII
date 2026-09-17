@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import serviceHero from '../assets/service-hero.jpg';
 import CTASection from '../components/CTASection';
+import Icon from '../components/common/Icon';
 
 export default function Services() {
   return (
@@ -58,7 +59,7 @@ export default function Services() {
             {/* Strategic Planning */}
             <div className="p-8 md:p-12 bg-white border border-outline-variant rounded-lg shadow-sm flex flex-col lg:flex-row gap-8 md:gap-12 hover:border-on-background transition-colors">
               <div className="lg:w-1/3">
-                <span className="material-symbols-outlined text-primary-fixed text-5xl mb-6 block font-light">strategy</span>
+                <Icon name="strategy" className="text-primary-fixed text-5xl mb-6 block font-light" />
                 <h3 className="font-headline-lg text-2xl md:text-3xl mb-4 font-bold text-on-background">Strategic Planning & Business Development</h3>
               </div>
               <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -90,7 +91,7 @@ export default function Services() {
                     </ul>
                   </div>
                   <Link to="/services/strategic-planning" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
-                      Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Explore Service <Icon name="arrow_forward" className="text-sm" />
                   </Link>
                 </div>
               </div>
@@ -99,7 +100,7 @@ export default function Services() {
             {/* Project Management */}
             <div className="p-8 md:p-12 bg-white border border-outline-variant rounded-lg shadow-sm flex flex-col lg:flex-row gap-8 md:gap-12 hover:border-on-background transition-colors">
               <div className="lg:w-1/3">
-                <span className="material-symbols-outlined text-primary-fixed text-5xl mb-6 block font-light">task_alt</span>
+                <Icon name="task_alt" className="text-primary-fixed text-5xl mb-6 block font-light" />
                 <h3 className="font-headline-lg text-2xl md:text-3xl mb-4 font-bold text-on-background">Project Management & Execution</h3>
               </div>
               <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -131,7 +132,7 @@ export default function Services() {
                     </ul>
                   </div>
                   <Link to="/services/project-management" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
-                      Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Explore Service <Icon name="arrow_forward" className="text-sm" />
                   </Link>
                 </div>
               </div>
@@ -140,7 +141,7 @@ export default function Services() {
             {/* Branding & Marketing */}
             <div className="p-8 md:p-12 bg-white border border-outline-variant rounded-lg shadow-sm flex flex-col lg:flex-row gap-8 md:gap-12 hover:border-on-background transition-colors">
               <div className="lg:w-1/3">
-                <span className="material-symbols-outlined text-primary-fixed text-5xl mb-6 block font-light">campaign</span>
+                <Icon name="campaign" className="text-primary-fixed text-5xl mb-6 block font-light" />
                 <h3 className="font-headline-lg text-2xl md:text-3xl mb-4 font-bold text-on-background">Branding & Marketing</h3>
               </div>
               <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -172,7 +173,7 @@ export default function Services() {
                     </ul>
                   </div>
                   <Link to="/services/branding-marketing" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
-                      Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Explore Service <Icon name="arrow_forward" className="text-sm" />
                   </Link>
                 </div>
               </div>
@@ -181,7 +182,7 @@ export default function Services() {
             {/* Content Creation */}
             <div className="p-8 md:p-12 bg-white border border-outline-variant rounded-lg shadow-sm flex flex-col lg:flex-row gap-8 md:gap-12 hover:border-on-background transition-colors">
               <div className="lg:w-1/3">
-                <span className="material-symbols-outlined text-primary-fixed text-5xl mb-6 block font-light">video_library</span>
+                <Icon name="video_library" className="text-primary-fixed text-5xl mb-6 block font-light" />
                 <h3 className="font-headline-lg text-2xl md:text-3xl mb-4 font-bold text-on-background">Content Creation</h3>
               </div>
               <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -205,7 +206,7 @@ export default function Services() {
                     </ul>
                   </div>
                   <Link to="/contact" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest hover:gap-4 transition-all mt-6 w-fit border-b-2 border-on-background pb-1">
-                      Start Production <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Start Production <Icon name="arrow_forward" className="text-sm" />
                   </Link>
                 </div>
               </div>

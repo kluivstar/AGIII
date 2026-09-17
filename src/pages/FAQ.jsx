@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import CTASection from '../components/CTASection';
+import Icon from '../components/common/Icon';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -80,9 +81,10 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
                 <span className="font-headline-lg text-lg md:text-xl font-bold text-on-background pr-8">{faq.question}</span>
-                <span className={`material-symbols-outlined text-primary-container transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
-                  expand_more
-                </span>
+                <Icon 
+                  name="expand_more" 
+                  className={`text-primary-container text-xl transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} 
+                />
               </button>
               <div 
                 className={`px-6 md:px-8 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 pb-8 opacity-100' : 'max-h-0 opacity-0'}`}

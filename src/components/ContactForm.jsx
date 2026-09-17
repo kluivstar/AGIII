@@ -1,5 +1,6 @@
 import React from 'react';
 import { useContactForm } from '../hooks/useContactForm';
+import Icon from './common/Icon';
 
 export default function ContactForm() {
   const {
@@ -20,9 +21,7 @@ export default function ContactForm() {
         role="alert"
         aria-live="polite"
       >
-        <span className="material-symbols-outlined text-green-600 text-5xl mb-4">
-          check_circle
-        </span>
+        <Icon name="check_circle" className="text-green-600 text-5xl mb-4" />
         <h3 className="font-display-sm text-2xl mb-4 text-on-background">Message Sent!</h3>
         <p className="font-body-md text-tertiary mb-8 leading-relaxed">
           Thank you for contacting AG3 Management. Your inquiry has been received and a member of our team will respond shortly.
@@ -44,9 +43,7 @@ export default function ContactForm() {
           className="mb-8 p-4 border border-red-600/30 bg-red-50/50 text-red-800 rounded-sm text-sm flex items-start gap-3"
           role="alert"
         >
-          <span className="material-symbols-outlined text-red-600 flex-shrink-0">
-            error
-          </span>
+          <Icon name="error" className="text-red-600 flex-shrink-0 text-xl" />
           <span className="font-body-md">{submitError}</span>
         </div>
       )}
@@ -199,7 +196,7 @@ export default function ContactForm() {
               <option value="Branding & Marketing">Branding & Marketing</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-on-surface-variant">
-              <span className="material-symbols-outlined">expand_more</span>
+              <Icon name="expand_more" className="text-xl" />
             </div>
           </div>
         </div>
@@ -253,7 +250,7 @@ export default function ContactForm() {
             ) : (
               <>
                 Initiate Consultation
-                <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+                <Icon name="arrow_forward" className="transition-transform group-hover:translate-x-2 text-xl" />
               </>
             )}
           </button>

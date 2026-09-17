@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/seo/SEO';
 import projectImag from '../../assets/project-management.jpg';
+import Icon from '../../components/common/Icon';
 
 export default function ProjectManagement() {
   const serviceSchema = {
@@ -29,7 +30,7 @@ export default function ProjectManagement() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           <div className="lg:w-1/2">
             <Link to="/services" className="inline-flex items-center gap-2 font-label-sm text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-background transition-colors mb-8 font-bold">
-              <span className="material-symbols-outlined text-sm">arrow_back</span> Back to Services
+              <Icon name="arrow_back" className="text-sm" /> Back to Services
             </Link>
             <h1 className="font-display-sm text-4xl md:text-6xl mb-6 text-on-background tracking-tight leading-tight">Project Management <br className="hidden md:block"/>& Execution</h1>
             <p className="font-body-lg text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-xl">
@@ -99,9 +100,9 @@ export default function ProjectManagement() {
                 Seamless execution of complex initiatives, strict adherence to budgets, and successful operational rollouts. You gain the momentum necessary to push past obstacles.
               </p>
               <ul className="space-y-4 font-label-sm text-sm uppercase tracking-widest font-bold text-primary-container">
-                <li className="flex items-center gap-4"><span className="material-symbols-outlined">check_circle</span> Program Implementation</li>
-                <li className="flex items-center gap-4"><span className="material-symbols-outlined">check_circle</span> Grant-Funded Initiatives</li>
-                <li className="flex items-center gap-4"><span className="material-symbols-outlined">check_circle</span> Operational Execution</li>
+                <li className="flex items-center gap-4"><Icon name="check_circle" className="text-lg text-primary-container" /> Program Implementation</li>
+                <li className="flex items-center gap-4"><Icon name="check_circle" className="text-lg text-primary-container" /> Grant-Funded Initiatives</li>
+                <li className="flex items-center gap-4"><Icon name="check_circle" className="text-lg text-primary-container" /> Operational Execution</li>
               </ul>
             </div>
             <div className="lg:w-1/2 flex flex-col items-start lg:items-center text-left lg:text-center">

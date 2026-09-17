@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/seo/SEO';
 import CTASection from '../components/CTASection';
+import Icon from '../components/common/Icon';
 
 export default function About() {
   return (
@@ -40,12 +41,12 @@ export default function About() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 pt-4 md:pt-8">
               <div className="group">
-                <span className="material-symbols-outlined text-on-background/30 group-hover:text-primary-container transition-colors mb-4 md:mb-6 text-4xl">groups</span>
+                <Icon name="groups" className="text-on-background/30 group-hover:text-primary-container transition-colors mb-4 md:mb-6 text-4xl block" />
                 <h3 className="font-headline-lg text-xl md:text-2xl mb-3">Shared Resources</h3>
                 <p className="text-tertiary leading-relaxed">We pool resources to overcome the limitations that often hold back great ideas.</p>
               </div>
               <div className="group">
-                <span className="material-symbols-outlined text-on-background/30 group-hover:text-primary-container transition-colors mb-4 md:mb-6 text-4xl">rocket_launch</span>
+                <Icon name="rocket_launch" className="text-on-background/30 group-hover:text-primary-container transition-colors mb-4 md:mb-6 text-4xl block" />
                 <h3 className="font-headline-lg text-xl md:text-2xl mb-3">Consistent Action</h3>
                 <p className="text-tertiary leading-relaxed">We focus on execution. A vision is only as powerful as the consistent effort applied to bring it to life.</p>
               </div>

@@ -4,6 +4,7 @@ import SEO from '../components/seo/SEO';
 import heroImg from '../assets/hero-img.jpg';
 import whyAg3Img from '../assets/why-ag3.png';
 import CTASection from '../components/CTASection';
+import Icon from '../components/common/Icon';
 
 export default function Home() {
   const orgSchema = {
@@ -31,7 +32,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero relative min-h-[85vh] flex items-center pt-10 pb-20 overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-multiply" alt="AG3 Management Strategy" src={heroImg} />
+          <img fetchPriority="high" className="w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-multiply" alt="AG3 Management Strategy" src={heroImg} />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent md:to-white/40"></div>
         </div>
         
@@ -91,29 +92,29 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white border border-outline-variant p-8 md:p-12 rounded-lg group hover:border-on-background transition-colors duration-300 shadow-sm hover:shadow-md flex flex-col h-full">
-              <span className="material-symbols-outlined text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light">strategy</span>
+              <Icon name="strategy" className="text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light" />
               <h3 className="font-headline-lg text-2xl mb-4 text-on-background group-hover:text-primary-container transition-colors">Strategic Planning</h3>
               <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed flex-grow">Overcome lack of clarity with vision development, market analysis, and funding strategies to confidently build your path forward.</p>
               <Link to="/services/strategic-planning" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest group-hover:gap-4 transition-all mt-auto w-fit">
-                  Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Explore Service <Icon name="arrow_forward" className="text-sm" />
               </Link>
             </div>
             
             <div className="bg-white border border-outline-variant p-8 md:p-12 rounded-lg group hover:border-on-background transition-colors duration-300 shadow-sm hover:shadow-md flex flex-col h-full">
-              <span className="material-symbols-outlined text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light">task_alt</span>
+              <Icon name="task_alt" className="text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light" />
               <h3 className="font-headline-lg text-2xl mb-4 text-on-background group-hover:text-primary-container transition-colors">Project Management</h3>
               <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed flex-grow">Solve execution difficulties through dedicated program management, budget oversight, and precise timeline execution.</p>
               <Link to="/services/project-management" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest group-hover:gap-4 transition-all mt-auto w-fit">
-                  Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Explore Service <Icon name="arrow_forward" className="text-sm" />
               </Link>
             </div>
             
             <div className="bg-white border border-outline-variant p-8 md:p-12 rounded-lg group hover:border-on-background transition-colors duration-300 shadow-sm hover:shadow-md flex flex-col h-full">
-              <span className="material-symbols-outlined text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light">campaign</span>
+              <Icon name="campaign" className="text-primary-fixed text-4xl md:text-5xl mb-6 md:mb-8 block font-light" />
               <h3 className="font-headline-lg text-2xl mb-4 text-on-background group-hover:text-primary-container transition-colors">Branding & Marketing</h3>
               <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed flex-grow">Break through growth obstacles by clearly communicating your value, building credibility, and increasing your visibility.</p>
               <Link to="/services/branding-marketing" className="inline-flex items-center gap-2 font-label-sm text-xs text-on-background font-bold uppercase tracking-widest group-hover:gap-4 transition-all mt-auto w-fit">
-                  Explore Service <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Explore Service <Icon name="arrow_forward" className="text-sm" />
               </Link>
             </div>
           </div>
@@ -159,17 +160,17 @@ export default function Home() {
           <h2 className="font-display-sm text-3xl md:text-5xl text-on-background tracking-tight text-center mb-16">Who We Support.</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-8">
-              <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">person</span>
+              <Icon name="person" className="text-4xl text-primary-fixed mb-4" />
               <h3 className="font-headline-lg text-xl mb-4">Entrepreneurs</h3>
               <p className="text-on-surface-variant">Helping visionaries structure their ideas into actionable, fundable businesses.</p>
             </div>
             <div className="p-8">
-              <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">volunteer_activism</span>
+              <Icon name="volunteer_activism" className="text-4xl text-primary-fixed mb-4" />
               <h3 className="font-headline-lg text-xl mb-4">Nonprofits</h3>
               <p className="text-on-surface-variant">Providing operational strategy and grant management to maximize community impact.</p>
             </div>
             <div className="p-8">
-              <span className="material-symbols-outlined text-4xl text-primary-fixed mb-4">domain</span>
+              <Icon name="domain" className="text-4xl text-primary-fixed mb-4" />
               <h3 className="font-headline-lg text-xl mb-4">Organizations</h3>
               <p className="text-on-surface-variant">Guiding established businesses through complex expansions and branding initiatives.</p>
             </div>

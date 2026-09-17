@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../components/common/Icon';
 
 export default function Insights() {
   return (
@@ -15,7 +16,7 @@ export default function Insights() {
 <p className="font-body-md text-body-md text-white/70 mb-6">How automated workforce policy is redefining global geopolitical leverage in the 2025 horizon.</p>
 <button className="flex items-center gap-2 text-primary-fixed font-label-md text-label-md group-hover:gap-4 transition-all">
                         READ FULL REPORT 
-                        <span className="material-symbols-outlined">arrow_forward</span>
+                        <Icon name="arrow_forward" className="text-base" />
 </button>
 </div>
 </div>
@@ -85,7 +86,9 @@ export default function Insights() {
 
 <div className="fixed inset-0 bg-background z-[100] translate-x-full transition-transform duration-500 ease-in-out p-margin-mobile" id="mobile-menu">
 <div className="flex justify-end mb-12">
-<button className="material-symbols-outlined text-on-background p-2" id="menu-close">close</button>
+<button className="text-on-background p-2" id="menu-close" aria-label="Close menu">
+  <Icon name="close" className="text-2xl" />
+</button>
 </div>
 
 <div className="absolute bottom-16 left-margin-mobile right-margin-mobile">

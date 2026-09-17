@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
+import Icon from '../common/Icon';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,7 +83,7 @@ export default function Navbar() {
             aria-controls="mobile-menu"
             aria-label="Toggle Menu"
           >
-            <span className="material-symbols-outlined text-on-background">menu</span>
+            <Icon name="menu" className="text-2xl text-on-background" />
           </button>
         </nav>
       </header>
@@ -109,7 +110,7 @@ export default function Navbar() {
             onClick={closeMenu}
             aria-label="Close Menu"
           >
-            <span className="material-symbols-outlined text-on-background">close</span>
+            <Icon name="close" className="text-2xl text-on-background" />
           </button>
         </div>
         
